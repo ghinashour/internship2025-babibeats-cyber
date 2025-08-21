@@ -1,15 +1,9 @@
-[ Original Song File / User Data ]
-│
-▼
-[ AES Encryption ]
-(Key + Initialization Vector)
-│
-▼
-[ Encrypted Secure Data ]
-│
-▼
-[ AES Decryption ]
-(Same Key + IV required)
-│
-▼
-[ Original Content Restored ]
+# AES Encryption Illustration (Mermaid Diagram)
+
+```mermaid
+flowchart TD
+    A[Original Song File / User Data] --> B[AES Encryption<br/>(Key + Initialization Vector)]
+    B --> C[Encrypted Secure Data]
+    C --> D[AES Decryption<br/>(Same Key + IV required)]
+    D --> E[Original Content Restored]
+```
